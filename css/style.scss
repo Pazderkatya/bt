@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "bion-bold";
+    src: url("bion-bold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,12 +16,14 @@ html {
     font-family: 'Raleway';
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1240px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+img {
+    max-height: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: --bion;
 }
 
 :root {
@@ -25,6 +34,16 @@ html {
     --button-bg-arrow: #3fb0ac;
     --padding-button: 20px 40px;
     --color-arrow: #dddfd4;
+    --bion: 'bion-bold';
+    --color-hov: #aba38c;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 button {
@@ -42,10 +61,6 @@ button {
     gap: 10px;
     border: none;
     height: 80px;
-}
-
-img {
-    max-height: 100%;
 }
 
 .bg {
@@ -104,4 +119,90 @@ img {
 .right,
 .left {
     padding-top: 10px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    margin-top: 100px;
+    min-width: --min-width;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+.picture {
+    max-width: 100%;
+    height: 250px;
+}
+
+.stand {
+    border: 1px solid #aba38c;
+    .title {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.bg-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    &__text {
+        padding-left: 10px;
+    }
+    &__foto {
+        img {
+            height: 100%;
+            width: 200px;
+        }
+    }
+}
+
+.sep {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    p {
+        padding-right: 15px;
+    }
+}
+
+.bt {
+    background-image: url('../img/piony.jpeg');
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 20px;
+    h2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+    button {
+        padding: 10px;
+        width: 100%;
+        max-width: 100px;
+        margin: 0 auto;
+        border-radius: 30px;
+        border: none;
+    }
+    button:hover {
+        color: #aba38c;
+    }
 }
