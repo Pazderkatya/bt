@@ -139,15 +139,14 @@ button {
   border: 1px solid #000;
 }
 
-.picture {
-  max-width: 100%;
-  height: 250px;
-}
-
 .stand {
   border: 1px solid #aba38c;
 }
-.stand .title {
+.stand__picture {
+  max-width: 100%;
+  height: 250px;
+}
+.stand__title {
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -173,7 +172,11 @@ button {
   flex-direction: column;
   gap: 15px;
 }
-.sep p {
+.sep__picture {
+  max-width: 100%;
+  height: 250px;
+}
+.sep__text {
   padding-right: 15px;
 }
 
@@ -186,11 +189,11 @@ button {
   text-align: center;
   padding-bottom: 20px;
 }
-.bt h2 {
+.bt__title {
   margin-top: 10px;
   text-align: center;
 }
-.bt button {
+.bt__but {
   padding: 10px;
   width: 100%;
   max-width: 100px;
@@ -198,6 +201,6 @@ button {
   border-radius: 30px;
   border: none;
 }
-.bt button:hover {
+.bt__but:hover {
   color: #aba38c;
 }/*# sourceMappingURL=style.css.map */
